@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══ SEO ОСНОВНИ ═══ -->
+<title>Градински услуги Павликени | Косене, Рязане, Оране — ДуоТруд</title>
+<meta name="description" content="Косене на трева, рязане на дърва, оране и почистване на градини в Павликени и околните села. Работим събота и неделя. Изпрати заявка директно от сайта!">
+<meta name="keywords" content="косене трева Павликени, рязане дърва Павликени, оране градина Павликени, почистване двор Павликени, градински услуги Павликени, косене Вишовград, градински услуги Велико Търново">
+<meta name="author" content="ДуоТруд — Градински услуги">
+<meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="sEpFGq5P3f4bmiEl0A-QaDeZd66jyCtvwicTAtPdsVI">
+<meta name="language" content="Bulgarian">
+<link rel="canonical" href="https://duotrud.netlify.app/">
+ 
+<!-- ═══ OPEN GRAPH (Facebook, Viber, WhatsApp preview) ═══ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://duotrud.netlify.app/">
+<meta property="og:title" content="Градински услуги Павликени | ДуоТруд">
+<meta property="og:description" content="Косене, рязане на дърва, оране и почистване на градини в Павликени и региона. Работим събота и неделя!">
+<meta property="og:locale" content="bg_BG">
+<meta property="og:site_name" content="ДуоТруд">
+ 
+<!-- ═══ TWITTER CARD ═══ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Градински услуги Павликени | ДуоТруд">
+<meta name="twitter:description" content="Косене, рязане на дърва, оране и почистване. Работим събота и неделя в Павликени и региона.">
+ 
+<!-- ═══ GEO ТАГОВЕ (местно SEO) ═══ -->
+<meta name="geo.region" content="BG-04">
+<meta name="geo.placename" content="Павликени, България">
+<meta name="geo.position" content="43.2417;25.3228">
+<meta name="ICBM" content="43.2417, 25.3228">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ДуоТруд — Градински услуги",
+  "description": "Косене на трева, рязане на дърва, оране и почистване на градини в Павликени и околните села. Работим събота и неделя.",
+  "url": "https://duotrud.netlify.app/",
+  "telephone": "+359890315302",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Павликени",
+    "addressRegion": "Велико Търново",
+    "addressCountry": "BG"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.2417,
+    "longitude": 25.3228
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "areaServed": [
+    "Павликени", "Вишовград", "Бяла черква", "Батак", "Върбовка", "Стамболово", "Михалци"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Градински услуги",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Косене на трева"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Рязане на дърва"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Оране на градина"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Почистване на градина"}}
+    ]
+  },
+  "priceRange": "$$",
+  "currenciesAccepted": "BGN",
+  "paymentAccepted": "Cash"
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#2d5a27;--gl:#4a8c3f;--gp:#e8f0e6;--earth:#8b6914;--el:#c49a2a;--cream:#f7f3eb;--dark:#1a1a14;--w:#fff}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);overflow-x:hidden}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--green);position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;padding:2rem;text-align:center}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 20% 80%,rgba(74,140,63,.35),transparent 70%),radial-gradient(ellipse 50% 40% at 80% 20%,rgba(196,154,42,.2),transparent 60%)}
+.leaf{position:absolute;font-size:14rem;opacity:.06;user-select:none;pointer-events:none}
+.leaf.a{top:-3rem;right:-3rem;transform:rotate(20deg)}
+.leaf.b{bottom:-4rem;left:-4rem;transform:rotate(-30deg);font-size:18rem}
+.badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:2rem;padding:.4rem 1.1rem;color:rgba(255,255,255,.85);font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;margin-bottom:1.5rem;animation:fu .7s ease both;flex-wrap:wrap;justify-content:center}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(3rem,9vw,7rem);font-weight:900;color:#fff;line-height:1;animation:fu .7s .15s ease both}
+.hero-title span{color:var(--el)}
+.hero-sub{margin-top:1.2rem;color:rgba(255,255,255,.7);font-size:clamp(.95rem,2vw,1.15rem);font-weight:300;max-width:480px;line-height:1.65;animation:fu .7s .3s ease both}
+.avail{margin-top:1.8rem;display:flex;align-items:center;gap:.6rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:1rem;padding:.65rem 1.3rem;color:rgba(255,255,255,.9);font-size:.88rem;animation:fu .7s .4s ease both}
+.dot{width:9px;height:9px;border-radius:50%;background:#6ee77a;box-shadow:0 0 0 3px rgba(110,231,122,.25);animation:pulse 2s infinite;flex-shrink:0}
+.cta-btn{margin-top:2.2rem;background:var(--el);color:var(--dark);font-family:'DM Sans',sans-serif;font-weight:500;font-size:1rem;padding:.9rem 2.2rem;border-radius:3rem;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;animation:fu .7s .5s ease both}
+.cta-btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.scroll-arr{position:absolute;bottom:2rem;font-size:1.6rem;color:rgba(255,255,255,.4);animation:bounce 2s infinite;cursor:pointer}
+
+/* GENERIC */
+.sec{padding:5rem 1.5rem;max-width:1100px;margin:0 auto}
+.slabel{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gl);font-weight:500;margin-bottom:.6rem}
+.stitle{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;line-height:1.15;color:var(--dark);margin-bottom:3rem}
+
+/* SERVICES */
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem}
+.scard{background:#fff;border-radius:1.4rem;padding:1.8rem 1.5rem;border:2px solid transparent;cursor:pointer;transition:border-color .2s,transform .2s,box-shadow .2s;position:relative;overflow:hidden}
+.scard::before{content:'';position:absolute;inset:0;background:var(--gp);opacity:0;transition:opacity .2s;border-radius:1.4rem}
+.scard:hover,.scard.sel{border-color:var(--gl);transform:translateY(-4px);box-shadow:0 16px 40px rgba(45,90,39,.12)}
+.scard:hover::before,.scard.sel::before{opacity:1}
+.scard .ck{position:absolute;top:1rem;right:1rem;width:22px;height:22px;border-radius:50%;background:var(--gl);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.7rem;opacity:0;transition:opacity .2s}
+.scard.sel .ck{opacity:1}
+.sicon{font-size:2.4rem;margin-bottom:.9rem;position:relative;z-index:1}
+.sname{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--dark);margin-bottom:.4rem;position:relative;z-index:1}
+.sdesc{font-size:.85rem;color:#666;line-height:1.55;position:relative;z-index:1}
+
+/* PHOTOS */
+.photo-sec{background:var(--dark);padding:5rem 1.5rem}
+.photo-inner{max-width:1100px;margin:0 auto}
+.photo-inner .slabel{color:var(--el)}
+.photo-inner .stitle{color:#fff;margin-bottom:2rem}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.pitem{border-radius:1rem;overflow:hidden;aspect-ratio:4/3;background:rgba(255,255,255,.05)}
+.pitem img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.pitem:hover img{transform:scale(1.04)}
+.ph-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;color:rgba(255,255,255,.2);font-size:.85rem;height:180px;border:2px dashed rgba(255,255,255,.1);border-radius:1rem;padding:1rem;text-align:center}
+.ph-placeholder .bigicon{font-size:2.5rem;opacity:.4}
+
+/* REVIEWS */
+.rev-sec{padding:5rem 1.5rem;background:var(--cream)}
+.rev-inner{max-width:1100px;margin:0 auto}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.2rem;margin-top:1rem}
+.rcard{background:#fff;border-radius:1.4rem;padding:1.8rem;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.rstars{color:var(--el);font-size:1.1rem;margin-bottom:.7rem}
+.rtext{font-size:.92rem;color:#444;line-height:1.65;margin-bottom:1rem;font-style:italic}
+.rauthor{font-weight:500;font-size:.85rem;color:var(--green)}
+
+/* FORM */
+.form-sec{background:var(--green);padding:5rem 1.5rem}
+.fwrap{max-width:700px;margin:0 auto}
+.fwrap .stitle{color:#fff;margin-bottom:.5rem}
+.fwrap .slabel{color:var(--el)}
+.fsub{color:rgba(255,255,255,.65);font-size:.95rem;margin-bottom:2rem;line-height:1.6;margin-top:.3rem}
+.seldisplay{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem;min-height:38px}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:2rem;color:#fff;font-size:.82rem;padding:.3rem .9rem}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fgrid .full{grid-column:1/-1}
+label{display:block;font-size:.8rem;font-weight:500;color:rgba(255,255,255,.7);letter-spacing:.05em;text-transform:uppercase;margin-bottom:.4rem}
+input,textarea,select{width:100%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:.8rem;padding:.8rem 1rem;color:#fff;font-family:'DM Sans',sans-serif;font-size:.95rem;outline:none;transition:border-color .2s,background .2s}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,.35)}
+input:focus,textarea:focus,select:focus{border-color:var(--el);background:rgba(255,255,255,.14)}
+select option{background:var(--green);color:#fff}
+textarea{resize:vertical;min-height:110px}
+.wknote{background:rgba(196,154,42,.15);border:1px solid rgba(196,154,42,.35);border-radius:.8rem;padding:.8rem 1rem;color:rgba(255,255,255,.8);font-size:.85rem}
+.sbtn{margin-top:1.5rem;width:100%;background:var(--el);color:var(--dark);border:none;border-radius:3rem;padding:1rem;font-family:'DM Sans',sans-serif;font-size:1.05rem;font-weight:500;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.sbtn:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,0,0,.3)}
+.sbtn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.ok-msg{text-align:center;padding:3rem 1rem;display:none}
+.ok-msg .okicon{font-size:4rem;margin-bottom:1rem}
+.ok-msg h3{font-family:'Playfair Display',serif;font-size:1.8rem;color:#fff;margin-bottom:.6rem}
+.ok-msg p{color:rgba(255,255,255,.7);font-size:.95rem;line-height:1.6}
+
+/* ABOUT */
+.about-sec{background:var(--dark);padding:5rem 1.5rem}
+.about-in{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.about-in .stitle{color:#fff;margin-bottom:1rem}
+.about-in .slabel{color:var(--el)}
+.atext{color:rgba(255,255,255,.65);font-size:.95rem;line-height:1.75}
+.statrow{display:flex;gap:2rem;margin-top:2rem}
+.statnum{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:700;color:var(--el);line-height:1}
+.statlbl{font-size:.8rem;color:rgba(255,255,255,.5);margin-top:.2rem}
+.circle{width:280px;height:280px;border-radius:50%;background:radial-gradient(circle at 40% 40%,var(--gl),var(--green));display:flex;align-items:center;justify-content:center;font-size:7rem;box-shadow:0 30px 80px rgba(45,90,39,.4);margin:0 auto}
+
+/* ADMIN TOGGLE */
+.admin-toggle{position:fixed;bottom:1.5rem;right:1.5rem;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,.5);border:none;color:#fff;font-size:1.2rem;cursor:pointer;z-index:900;backdrop-filter:blur(4px)}
+
+/* ADMIN OVERLAY */
+.adm-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;pointer-events:none;transition:opacity .3s}
+.adm-overlay.open{opacity:1;pointer-events:all}
+.adm-panel{background:#1e2a1b;border-radius:1.4rem;width:100%;max-width:520px;max-height:90vh;overflow-y:auto;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.adm-header{display:flex;align-items:center;justify-content:space-between;padding:1.4rem 1.6rem;border-bottom:1px solid rgba(255,255,255,.1)}
+.adm-header h2{color:#fff;font-family:'Playfair Display',serif;font-size:1.3rem}
+.adm-close{background:none;border:none;color:rgba(255,255,255,.5);font-size:1.3rem;cursor:pointer}
+.adm-body{padding:1.6rem}
+.adm-login{text-align:center;padding:1rem 0}
+.adm-login p{color:rgba(255,255,255,.6);margin-bottom:1.2rem}
+.pin-row{display:flex;gap:.6rem;justify-content:center;margin-bottom:1.2rem}
+.pin-row input{width:48px;height:56px;text-align:center;font-size:1.4rem;border-radius:.8rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff}
+.pin-btn{background:var(--el);color:var(--dark);border:none;border-radius:2rem;padding:.65rem 2rem;font-family:'DM Sans',sans-serif;font-weight:500;cursor:pointer}
+.pin-err{color:#f87171;font-size:.85rem;margin-top:.8rem;display:none}
+.adm-tabs{display:flex;gap:.5rem;margin-bottom:1.5rem}
+.atab{flex:1;padding:.6rem;border:1px solid rgba(255,255,255,.15);border-radius:.7rem;background:none;color:rgba(255,255,255,.5);font-family:'DM Sans',sans-serif;font-size:.9rem;cursor:pointer;transition:all .2s}
+.atab.active{background:var(--gl);border-color:var(--gl);color:#fff}
+.atab-content{display:none}.atab-content.active{display:block}
+.upload-zone{border:2px dashed rgba(255,255,255,.2);border-radius:1rem;padding:2rem;text-align:center;cursor:pointer;transition:border-color .2s;color:rgba(255,255,255,.5);margin-bottom:1rem}
+.upload-zone:hover{border-color:var(--el)}
+.upload-zone input{display:none}
+.thumb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+.thumb{position:relative;aspect-ratio:1;border-radius:.6rem;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb-del{position:absolute;top:.25rem;right:.25rem;width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,.7);border:none;color:#fff;font-size:.65rem;cursor:pointer}
+.rev-form label{color:rgba(255,255,255,.6)}
+.rev-form input,.rev-form textarea,.rev-form select{margin-bottom:.8rem}
+.add-btn{width:100%;background:var(--gl);color:#fff;border:none;border-radius:.8rem;padding:.7rem;font-family:'DM Sans',sans-serif;cursor:pointer;margin-top:.3rem}
+.rev-list-item{background:rgba(255,255,255,.06);border-radius:.8rem;padding:.8rem 1rem;margin-top:.7rem;display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem}
+.rev-list-item p{color:rgba(255,255,255,.8);font-size:.85rem}
+.rev-list-item .del-rev{background:none;border:none;color:#f87171;cursor:pointer;font-size:.8rem;flex-shrink:0}
+
+footer{background:#111;padding:2rem 1.5rem;text-align:center;color:rgba(255,255,255,.3);font-size:.82rem}
+
+@keyframes fu{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 3px rgba(110,231,122,.25)}50%{box-shadow:0 0 0 6px rgba(110,231,122,.1)}}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+
+@media(max-width:640px){
+  .fgrid{grid-template-columns:1fr}.fgrid .full{grid-column:1}
+  .about-in{grid-template-columns:1fr;gap:2rem}
+  .circle{width:200px;height:200px;font-size:5rem}
+}
+
+/* TOAST */
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(120px);background:#1e2a1b;color:#fff;padding:.85rem 1.5rem;border-radius:3rem;font-size:.92rem;box-shadow:0 8px 32px rgba(0,0,0,.35);z-index:9999;display:flex;align-items:center;gap:.6rem;transition:transform .4s cubic-bezier(.34,1.56,.64,1),opacity .4s;opacity:0;pointer-events:none;white-space:nowrap;border:1px solid rgba(255,255,255,.1)}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.toast.err{background:#3a1a1a;border-color:rgba(248,113,113,.3)}
+.toast.err .ticon{color:#f87171}
+.toast.ok{background:#1a3a1e;border-color:rgba(110,231,122,.3)}
+.toast.ok .ticon{color:#6ee77a}
+.toast.warn{background:#3a2e10;border-color:rgba(196,154,42,.35)}
+.toast.warn .ticon{color:var(--el)}
+.ticon{font-size:1.1rem}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="leaf a">🌿</div>
+  <div class="leaf b">🌿</div>
+  <div class="badge">📍 Община Павликени &nbsp;·&nbsp; 🌱 Местни, надеждни, качествени</div>
+  <h1 class="hero-title">Ние косим,<br>режем & <span>чистим</span></h1>
+  <p class="hero-sub">Две момчета готови да наредят вашия двор или градина — бързо, чисто и на достъпна цена.</p>
+  <div class="avail">
+    <div class="dot"></div>
+    📅 Работим <strong style="color:#fff;margin:0 .25rem">Събота & Неделя</strong> — правете заявки сега!
+  </div>
+  <button class="cta-btn" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Изпрати заявка →</button>
+  <div class="scroll-arr" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">↓</div>
+</section>
+
+<!-- SERVICES -->
+<div class="sec" id="services">
+  <div class="slabel">Какво правим</div>
+  <h2 class="stitle">Избери услуга<br>и ние се свързваме</h2>
+  <div class="sgrid">
+    <div class="scard" data-s="Косене на трева" onclick="toggleSvc(this)">
+      <div class="ck">✓</div><div class="sicon">🌿</div>
+      <div class="sname">Косене на трева</div>
+      <div class="sdesc">Косим дворове, поляни и тревни площи с машина. Бързо и акуратно.</div>
+    </div>
+    <div class="scard" data-s="Рязане на дърва" onclick="toggleSvc(this)">
+      <div class="ck">✓</div><div class="sicon">🪵</div>
+      <div class="sname">Рязане на дърва</div>
+      <div class="sdesc">Режем клони, дървета и дърва за огрев. Тежката работа е за нас.</div>
+    </div>
+    <div class="scard" data-s="Оране на градина" onclick="toggleSvc(this)">
+      <div class="ck">✓</div><div class="sicon">🌱</div>
+      <div class="sname">Оране на градина</div>
+      <div class="sdesc">Подготвяме почвата за сеитба — ръчно или с мотокултиватор.</div>
+    </div>
+    <div class="scard" data-s="Почистване на градина" onclick="toggleSvc(this)">
+      <div class="ck">✓</div><div class="sicon">🧹</div>
+      <div class="sname">Почистване</div>
+      <div class="sdesc">Листа, клонки, стари растения — извозваме всичко след свършване.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PHOTOS -->
+<section class="photo-sec">
+  <div class="photo-inner">
+    <div class="slabel">Нашата работа</div>
+    <h2 class="stitle">Снимки</h2>
+    <div class="pgrid" id="photosGrid">
+      <div class="ph-placeholder"><div class="bigicon">📷</div>Снимките идват скоро...</div>
+      <div class="ph-placeholder"><div class="bigicon">🌿</div>Нашата работа в действие</div>
+      <div class="ph-placeholder"><div class="bigicon">🪵</div>Преди & след</div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="rev-sec">
+  <div class="rev-inner">
+    <div class="slabel">Доволни клиенти</div>
+    <h2 class="stitle">Какво казват хората</h2>
+    <div class="rgrid" id="reviewsGrid"></div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-sec" id="form">
+  <div class="fwrap">
+    <div class="slabel">Заявка</div>
+    <h2 class="stitle">Свържи се с нас</h2>
+    <p class="fsub">Попълни формата и ще се свържем с теб в рамките на деня.</p>
+    <div class="seldisplay" id="selDisplay">
+      <span style="color:rgba(255,255,255,.35);font-size:.85rem;align-self:center">← Избери услуга от по-горе</span>
+    </div>
+    <div id="formWrap">
+      <div class="fgrid">
+        <div><label>Твоето Ime</label><input type="text" id="fname" placeholder="Юри Йорданов"/></div>
+        <div><label>Телефон</label><input type="tel" id="fphone" placeholder="0890315302"/></div>
+        <div><label>Населено място</label><input type="text" id="floc" placeholder="с. Вишовград, Павликени..."/></div>
+        <div><label>Предпочитан ден</label>
+          <select id="fday">
+            <option value="">— Изберете —</option>
+            <option>Събота</option><option>Неделя</option>
+            <option>Събота или Неделя (без значение)</option>
+          </select>
+        </div>
+        <div class="full"><div class="wknote">⚠️ Работим само събота и неделя. Ще се свържем с вас за потвърждение на часа.</div></div>
+        <div class="full"><label>Допълнителна информация</label><textarea id="fnotes" placeholder="Опишете накратко — размер на двора, достъп, особености..."></textarea></div>
+      </div>
+      <button class="sbtn" onclick="submitForm()">📨 Изпрати заявката</button>
+    </div>
+    <div class="ok-msg" id="okMsg">
+      <div class="okicon">✅</div>
+      <h3>Заявката е получена!</h3>
+      <p>Ще се свържем с теб скоро на посочения телефон.<br>Очаквай обаждане!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-sec">
+  <div class="about-in">
+    <div>
+      <div class="slabel">Кои сме ние</div>
+      <h2 class="stitle">Две момчета,<br>сериозна работа</h2>
+      <p class="atext">Сме двама работливи момчета от <strong style="color:var(--el)">окръга на Община Павликени</strong> с опит в градинарството и поддръжката на дворове. Обслужваме Павликени и околните села. Правим нещата с желание, внимание и уважение към имота ти.</p>
+      <div class="statrow">
+        <div><div class="statnum">2</div><div class="statlbl">човека в екипа</div></div>
+        <div><div class="statnum">4</div><div class="statlbl">вида услуги</div></div>
+        <div><div class="statnum">Съб+Нед</div><div class="statlbl">работни дни</div></div>
+      </div>
+    </div>
+    <div><div class="circle">🤝</div></div>
+  </div>
+</section>
+
+<footer>© 2026 ДуоТруд — Градински услуги &nbsp;•&nbsp; Община Павликени &nbsp;•&nbsp; Работим Събота & Неделя</footer>
+
+<button class="admin-toggle" onclick="openAdm()" title="Admin">⚙️</button>
+
+<!-- ADMIN -->
+<div class="adm-overlay" id="admOverlay" onclick="if(event.target===this)closeAdm()">
+  <div class="adm-panel">
+    <div class="adm-header">
+      <h2>⚙️ Admin Панел</h2>
+      <button class="adm-close" onclick="closeAdm()">✕</button>
+    </div>
+    <div class="adm-body">
+      <div id="admLogin">
+        <div class="adm-login">
+          <p>Въведи PIN кода за достъп</p>
+          <div class="pin-row">
+            <input type="password" maxlength="1" id="p1" oninput="pNext(this,'p2')"/>
+            <input type="password" maxlength="1" id="p2" oninput="pNext(this,'p3')"/>
+            <input type="password" maxlength="1" id="p3" oninput="pNext(this,'p4')"/>
+            <input type="password" maxlength="1" id="p4" oninput="pNext(this,null)"/>
+          </div>
+          <button class="pin-btn" onclick="checkPin()">Влез</button>
+          <p class="pin-err" id="pinErr">Грешен PIN. Опитай отново.</p>
+        </div>
+      </div>
+      <div id="admContent" style="display:none">
+        <div class="adm-tabs">
+          <button class="atab active" onclick="switchTab('photos',this)">📸 Снимки</button>
+          <button class="atab" onclick="switchTab('reviews',this)">⭐ Отзиви</button>
+        </div>
+        <div class="atab-content active" id="tab-photos">
+          <div class="upload-zone" onclick="document.getElementById('photoIn').click()">
+            <div style="font-size:2rem">📷</div>
+            <p>Кликни за да избереш снимки<br><small>JPG, PNG — колкото искаш</small></p>
+            <input type="file" id="photoIn" accept="image/*" multiple onchange="addPhotos(this)"/>
+          </div>
+          <div class="thumb-grid" id="thumbGrid"></div>
+        </div>
+        <div class="atab-content" id="tab-reviews">
+          <div class="rev-form">
+            <div><label>Ime на клиента</label><input type="text" id="rName" placeholder="Мария Иванова"/></div>
+            <div><label>Населено място</label><input type="text" id="rLoc" placeholder="с. Вишовград"/></div>
+            <div><label>Отзив</label><textarea id="rText" rows="3" placeholder="Момчетата свършиха страхотна работа..."></textarea></div>
+            <div><label>Оценка</label>
+              <select id="rStars">
+                <option value="5">⭐⭐⭐⭐⭐ Отлично</option>
+                <option value="4">⭐⭐⭐⭐ Много добро</option>
+                <option value="3">⭐⭐⭐ Добро</option>
+              </select>
+            </div>
+            <button class="add-btn" onclick="addReview()">➕ Добави отзив</button>
+          </div>
+          <div id="revAdminList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const WEBHOOK = 'https://discord.com/api/webhooks/1493420454998835270/WSTbv1d65WDWbmPYv0TeoUXSFaby3kgmB_fD2vEesB2ZJL7BpSSxeMDD3DS7K8kcIlXL';
+const PIN = 'yran'; // СМЕНИ!
+let unlocked = false;
+const sel = new Set();
+
+
+// ── TOAST ──
+let toastTimer;
+function toast(msg, type='ok'){
+  const el=document.getElementById('toastEl');
+  const ic=document.getElementById('toastIcon');
+  const tx=document.getElementById('toastMsg');
+  el.className='toast '+type;
+  ic.textContent = type==='err'?'✕':type==='warn'?'⚠️':'✓';
+  tx.textContent=msg;
+  clearTimeout(toastTimer);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>el.classList.add('show')));
+  toastTimer=setTimeout(()=>el.classList.remove('show'),3500);
+}
+
+// ── SERVICES ──
+function toggleSvc(card){
+  const s=card.dataset.s;
+  sel.has(s)?sel.delete(s):sel.add(s);
+  card.classList.toggle('sel');
+  const el=document.getElementById('selDisplay');
+  el.innerHTML=sel.size?[...sel].map(x=>`<span class="pill">✓ ${x}</span>`).join('')
+    :'<span style="color:rgba(255,255,255,.35);font-size:.85rem;align-self:center">← Избери услуга от по-горе</span>';
+  document.getElementById('form').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+// ── FORM / DISCORD ──
+async function submitForm(){
+  const name=document.getElementById('fname').value.trim();
+  const phone=document.getElementById('fphone').value.trim();
+  const loc=document.getElementById('floc').value.trim();
+  const day=document.getElementById('fday').value;
+  const notes=document.getElementById('fnotes').value.trim();
+  if(!name||!phone||!loc||!day){toast('Моля попълни всички задължителни полета.','warn');return;}
+  if(!sel.size){toast('Моля избери поне една услуга.','warn');return;}
+  const btn=document.querySelector('.sbtn');
+  btn.disabled=true;btn.textContent='⏳ Изпращане...';
+  const payload={
+    username:'ДуоТруд — Нова Заявка',
+    embeds:[{
+      title:'🌿 Нова заявка от сайта!',color:0x2d5a27,
+      fields:[
+        {name:'👤 Клиент',value:name,inline:true},
+        {name:'📞 Телефон',value:phone,inline:true},
+        {name:'📍 Населено място',value:loc,inline:true},
+        {name:'📅 Ден',value:day,inline:true},
+        {name:'🛠️ Услуги',value:[...sel].map(s=>`• ${s}`).join('\n'),inline:false},
+        ...(notes?[{name:'📝 Бележки',value:notes,inline:false}]:[])
+      ],
+      footer:{text:'Сайт — Община Павликени'},
+      timestamp:new Date().toISOString()
+    }]
+  };
+  try{
+    const r=await fetch(WEBHOOK,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    if(r.ok||r.status===204){
+      document.getElementById('formWrap').style.display='none';
+      document.getElementById('okMsg').style.display='block';
+    }else throw 0;
+  }catch{
+    toast('Грешка при изпращане. Опитай отново.','err');
+    btn.disabled=false;btn.textContent='📨 Изпрати заявката';
+  }
+}
+
+// ── PHOTOS (memory only) ──
+let photos=[];
+function addPhotos(inp){
+  [...inp.files].forEach(f=>{
+    const r=new FileReader();
+    r.onload=e=>{photos.push(e.target.result);renderPhotos();renderThumbs();};
+    r.readAsDataURL(f);
+  });
+  inp.value='';
+}
+function deletePhoto(i){photos.splice(i,1);renderPhotos();renderThumbs();}
+function renderPhotos(){
+  const g=document.getElementById('photosGrid');
+  if(!photos.length){
+    g.innerHTML='<div class="ph-placeholder"><div class="bigicon">📷</div>Снимките идват скоро...</div><div class="ph-placeholder"><div class="bigicon">🌿</div>Нашата работа в действие</div><div class="ph-placeholder"><div class="bigicon">🪵</div>Преди & след</div>';
+    return;
+  }
+  g.innerHTML=photos.map(s=>`<div class="pitem"><img src="${s}" loading="lazy"/></div>`).join('');
+}
+function renderThumbs(){
+  document.getElementById('thumbGrid').innerHTML=photos.map((s,i)=>`<div class="thumb"><img src="${s}"/><button class="thumb-del" onclick="deletePhoto(${i})">✕</button></div>`).join('');
+}
+
+// ── REVIEWS ──
+let reviews=[
+  {name:'Петко Стоянов',loc:'с. Върбовка',stars:5,text:'Момчетата дойдоха навреме, свършиха работата за час и половина. Дворът изглежда страхотно! Определено ще ги търся пак.'},
+  {name:'Мария Колева',loc:'гр. Павликени',stars:5,text:'Много доволна! Почистиха цялата градина след зимата, отнасяха се много внимателно с растенията. Препоръчвам ги на всички.'},
+  {name:'Георги Иванов',loc:'с. Бяла черква',stars:5,text:'Изрязаха ми дърветата и наредиха дървата за огрев. Свестни и работливи момчета, цената беше повече от честна.'}
+];
+function renderReviews(){
+  const stars=n=>'⭐'.repeat(n);
+  document.getElementById('reviewsGrid').innerHTML=reviews.map(r=>`
+    <div class="rcard">
+      <div class="rstars">${stars(r.stars)}</div>
+      <p class="rtext">"${r.text}"</p>
+      <div class="rauthor">— ${r.name}${r.loc?', '+r.loc:''}</div>
+    </div>`).join('');
+}
+function addReview(){
+  const name=document.getElementById('rName').value.trim();
+  const loc=document.getElementById('rLoc').value.trim();
+  const text=document.getElementById('rText').value.trim();
+  const stars=+document.getElementById('rStars').value;
+  if(!name||!text){toast('Попълни Ime и отзив.','warn');return;}
+  reviews.push({name,loc,stars,text});
+  renderReviews();renderAdminRevs();
+  document.getElementById('rName').value='';
+  document.getElementById('rLoc').value='';
+  document.getElementById('rText').value='';
+}
+function deleteReview(i){reviews.splice(i,1);renderReviews();renderAdminRevs();}
+function renderAdminRevs(){
+  document.getElementById('revAdminList').innerHTML=reviews.map((r,i)=>`
+    <div class="rev-list-item">
+      <p><strong>${r.name}</strong> — ${'⭐'.repeat(r.stars)}<br><em>${r.text.substring(0,60)}...</em></p>
+      <button class="del-rev" onclick="deleteReview(${i})">🗑 Изтрий</button>
+    </div>`).join('');
+}
+
+// ── ADMIN ──
+function openAdm(){document.getElementById('admOverlay').classList.add('open');if(!unlocked)document.getElementById('p1').focus();}
+function closeAdm(){document.getElementById('admOverlay').classList.remove('open');}
+function pNext(el,nxt){if(el.value&&nxt)document.getElementById(nxt).focus();if(!nxt)checkPin();}
+function checkPin(){
+  const pin=['p1','p2','p3','p4'].map(id=>document.getElementById(id).value).join('');
+  if(pin===PIN){
+    unlocked=true;
+    document.getElementById('admLogin').style.display='none';
+    document.getElementById('admContent').style.display='block';
+    renderThumbs();renderAdminRevs();
+  }else{
+    document.getElementById('pinErr').style.display='block';
+    ['p1','p2','p3','p4'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('p1').focus();
+  }
+}
+function switchTab(name,btn){
+  document.querySelectorAll('.atab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.atab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ── INIT ──
+renderReviews();
+
+// Scroll animations
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.style.animation='fu .6s ease both';obs.unobserve(e.target);}});
+},{threshold:.1});
+document.querySelectorAll('.scard,.rcard').forEach(el=>{el.style.opacity='0';obs.observe(el);});
+</script>
+
+<div class="toast" id="toastEl"><span class="ticon" id="toastIcon"></span><span id="toastMsg"></span></div>
+</body>
+</html>

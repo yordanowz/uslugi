@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+ 
+Sitemap: duotrud.netlify.app/sitemap.xml
