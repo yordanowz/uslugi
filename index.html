@@ -353,7 +353,7 @@ footer{background:#111;padding:2rem 1.5rem;text-align:center;color:rgba(255,255,
   </div>
 </section>
 
-<footer>© 2025 ДуоТруд — Градински услуги &nbsp;•&nbsp; Община Павликени &nbsp;•&nbsp; Работим Събота & Неделя</footer>
+<footer>© 2026 ДуоТруд — Градински услуги &nbsp;•&nbsp; Община Павликени &nbsp;•&nbsp; Работим Събота & Неделя</footer>
 
 <button class="admin-toggle" onclick="openAdm()" title="Admin">⚙️</button>
 
@@ -414,7 +414,7 @@ footer{background:#111;padding:2rem 1.5rem;text-align:center;color:rgba(255,255,
 
 <script>
 const WEBHOOK = 'https://discord.com/api/webhooks/1493420454998835270/WSTbv1d65WDWbmPYv0TeoUXSFaby3kgmB_fD2vEesB2ZJL7BpSSxeMDD3DS7K8kcIlXL';
-const PIN = 'yran'; // СМЕНИ!
+const PIN = '1234'; // СМЕНИ!
 let unlocked = false;
 const sel = new Set();
 
@@ -483,32 +483,44 @@ async function submitForm(){
   }
 }
 
-// ── PHOTOS (localStorage) ──
-let photos = JSON.parse(localStorage.getItem('dt_photos') || '[]');
+// ── PHOTOS (Cloudinary) ──
+const CLOUD_NAME = 'dyxg87msb';
+const UPLOAD_PRESET = 'ml_default';
+let photos = JSON.parse(localStorage.getItem('dt_cloud_photos') || '[]');
 
-function savePhotos(){ try{ localStorage.setItem('dt_photos', JSON.stringify(photos)); }catch(e){ toast('Паметта е пълна! Изтрий някои снимки.','err'); } }
+function savePhotoUrls(){ localStorage.setItem('dt_cloud_photos', JSON.stringify(photos)); }
 
-function addPhotos(inp){
+async function addPhotos(inp){
   const files = [...inp.files];
-  let loaded = 0;
-  files.forEach(f=>{
-    const r=new FileReader();
-    r.onload=e=>{
-      photos.push(e.target.result);
-      loaded++;
-      if(loaded===files.length){ savePhotos(); renderPhotos(); renderThumbs(); toast('Снимките са запазени!','ok'); }
-    };
-    r.readAsDataURL(f);
-  });
+  if(!files.length) return;
+  toast('Качване... моля изчакай ⏳', 'warn');
+  let uploaded = 0;
+  for(const f of files){
+    const fd = new FormData();
+    fd.append('file', f);
+    fd.append('upload_preset', UPLOAD_PRESET);
+    try{
+      const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`, {method:'POST', body:fd});
+      const data = await res.json();
+      if(data.secure_url){
+        photos.push(data.secure_url);
+        uploaded++;
+      }
+    }catch(e){ toast('Грешка при качване на снимка.','err'); }
+  }
   inp.value='';
+  savePhotoUrls();
+  renderPhotos();
+  renderThumbs();
+  toast(`${uploaded} снимка${uploaded===1?'':'и'} качена${uploaded===1?'':'и'} успешно!`, 'ok');
 }
 
 function deletePhoto(i){
   photos.splice(i,1);
-  savePhotos();
+  savePhotoUrls();
   renderPhotos();
   renderThumbs();
-  toast('Снимката е изтрита.','ok');
+  toast('Снимката е премахната.','ok');
 }
 
 function renderPhotos(){
